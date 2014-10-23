@@ -2,9 +2,11 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  color: $dark-font;
+  font-family: 'Noto Serif', serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Text Styles */
@@ -12,20 +14,29 @@
 .text-thin { font-weight: 300; }
 .text-light { color: $light-grey; }
 .text-small { font-size: .85em; }
-h1, h2, h3, h4, h5, h6, p { margin: 0; }
+p { margin: 0; }
+strong { font-weight: 700; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
 
-p {
-  margin-bottom: 1.25rem;
+h4 {
+  font-size: .85em;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.5em;
+  color: #666;
 }
 
 /* Spacing */
-.no-margin { margin: 0 !important;}
+.no-m-t { margin-top: 0 !important; }
 
 /* hr */
 hr {
   border: 0;
   border-top: 1px solid $light-grey;
-  margin: 40px auto;
+  margin: 4rem auto;
 }
 
 /* List Styles */
@@ -41,5 +52,26 @@ ul {
 }
 
 /* Main Column */
-.main { padding: 160px 15px 0; }
+.main { padding: 160px 15px; }
 
+.about-section {
+  p {
+    margin-bottom: 1.5em;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.resume-heading {
+  font-size: 1.5em;
+  margin: 4rem 0 1.5rem;
+}
+
+.resume-description {
+  h4 {
+    font-family: 'Noto Serif', serif;
+    margin-top: 1.5em;
+
+    &:first-child { margin-top: 0; }
+  }
+}
