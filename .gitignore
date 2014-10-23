@@ -1,4 +1,7 @@
 
 node_modules
-dist
+dist/*
 .log
+dist/css/styles.css
+
+dist/index.html
