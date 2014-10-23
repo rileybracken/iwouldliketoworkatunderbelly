@@ -4,6 +4,7 @@ var concat 		= require('gulp-concat');
 var coffee 		= require('gulp-coffee');
 var sass 			= require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
+var concatCSS = require('gulp-concat-css');
 
 gulp.task('scripts', function () {
 	return  gulp.src('src/js/**/*')
@@ -21,6 +22,7 @@ gulp.task('markup', function () {
 gulp.task('styles', function() {
 	return gulp.src('src/css/*.scss')
 		.pipe(sass())
+		.pipe(concatCSS("styles.css"))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest('dist/css'));
 });
