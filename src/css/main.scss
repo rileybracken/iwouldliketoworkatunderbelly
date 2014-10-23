@@ -12,10 +12,10 @@
 /* Text Styles */
 .text-center { text-align: center; }
 .text-thin { font-weight: 300; }
-.text-light { color: $light-grey; }
-.text-small { font-size: .85em; }
+.text-light { color: $medium-grey; }
 p { margin: 0; }
 strong { font-weight: 700; }
+i { color: $medium-grey; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -29,14 +29,24 @@ h4 {
   color: #666;
 }
 
+a, a:hover {
+  color: $dark-font;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $light-grey 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 17px;
+}
+
 /* Spacing */
 .no-m-t { margin-top: 0 !important; }
+.margin-t-m { margin-top: 4rem !important; }
 
 /* hr */
 hr {
   border: 0;
   border-top: 1px solid $light-grey;
-  margin: 4rem auto;
+  margin: 0;
 }
 
 /* List Styles */
@@ -55,10 +65,27 @@ ul {
 .main { padding: 160px 15px; }
 
 .about-section {
+  margin: 4rem 0;
+
   p {
     margin-bottom: 1.5em;
 
     &:last-child { margin-bottom: 0; }
+  }
+}
+
+/* Contact */
+ul {
+  margin: 4rem 0;
+
+  &.contact.list-inline > li {
+  position: relative;
+  padding-left: 2em;
+
+    i {
+      position: absolute;
+      left: .8em;
+    }
   }
 }
 
@@ -71,7 +98,5 @@ ul {
   h4 {
     font-family: 'Noto Serif', serif;
     margin-top: 1.5em;
-
-    &:first-child { margin-top: 0; }
   }
 }
