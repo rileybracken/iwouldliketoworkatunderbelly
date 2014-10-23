@@ -37,7 +37,7 @@
 			&.ip-loader-circle {
 				-webkit-transition: stroke-dashoffset 0.2s;
 								transition: stroke-dashoffset 0.2s;
-				stroke: #1c9ccd;
+				stroke: #4da8c7;
 			}
 		}
 	}
@@ -52,7 +52,7 @@
 		min-height: 200px;
 		height: 25%;
 
-		path { fill: #1c9ccd; }
+		path { fill: #4da8c7; }
 	}
 }
 
@@ -79,7 +79,7 @@
 
 .loading .ip-loader {
 	-webkit-animation: animInitialLoader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
-	animation: animInitialLoader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+					animation: animInitialLoader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
 @-webkit-keyframes animInitialLoader {
@@ -94,9 +94,9 @@
 .loaded .logo, .loaded .ip-loader { opacity: 1; }
 .loaded .logo {
 	-webkit-transform-origin: 50% 0;
-	transform-origin: 50% 0;
+					transform-origin: 50% 0;
 	-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
-	animation: animLoadedLogo 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+					animation: animLoadedLogo 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
 }
 
 @-webkit-keyframes animLoadedLogo {
@@ -142,29 +142,11 @@
 }
 
 /* Content animations */
-.loaded .main h2,
-.loaded .main .browser,
-.loaded .main .browser .box,
-.loaded .codrops-demos {
+.loaded .main h2 {
 	-webkit-animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 					animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
-}
-
-.loaded .main h2,
-.loaded .main .browser .box:first-child {
 	-webkit-animation-delay: 0.1s;
 					animation-delay: 0.1s;
-}
-
-.loaded .codrops-demos,
-.loaded .main .browser .box:nth-child(2) {
-	-webkit-animation-delay: 0.15s;
-					animation-delay: 0.15s;
-}
-
-.loaded .main .browser .box:nth-child(3) {
-	-webkit-animation-delay: 0.2s;
-					animation-delay: 0.2s;
 }
 
 @-webkit-keyframes animLoadedContent {
@@ -195,9 +177,3 @@
 }
 
 .no-js .header .logo svg path { fill: #fff; }
-
-/* Media queries */
-
-@media screen and (max-width: 45em) {
-	.box { width: 100%; }
-}
