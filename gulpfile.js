@@ -5,6 +5,7 @@ var coffee 		= require('gulp-coffee');
 var sass 			= require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var concatCSS = require('gulp-concat-css');
+var jade 			= require('gulp-jade');
 
 gulp.task('scripts', function () {
 	return  gulp.src('src/js/**/*')
@@ -15,7 +16,8 @@ gulp.task('scripts', function () {
 })
 
 gulp.task('markup', function () {
-	return gulp.src('src/index.html')
+	gulp.src('src/index.jade')
+    .pipe(jade())
 		.pipe(gulp.dest('dist'));
 });
 
@@ -34,7 +36,7 @@ gulp.task('vendor', function() {
 
 gulp.task('watch', function () {
 	gulp.watch('src/js/**/*.coffee', ['scripts']);
-	gulp.watch('src/index.html', ['markup']);
+	gulp.watch('src/index.jade', ['markup']);
 	gulp.watch('src/vendor/*', ['vendor']);
 	gulp.watch('src/css/*', ['styles']);
 });
