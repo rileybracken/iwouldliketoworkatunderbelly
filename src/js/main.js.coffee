@@ -62,8 +62,8 @@
     window.scrollTo 0, 0
 
   support = animations: Modernizr.cssanimations
-  container = document.getElementById('ip-container')
-  header = container.querySelector('header.ip-header')
+  container = document.getElementById('container')
+  header = container.querySelector('header.header')
   loader = new PathLoader(document.getElementById('ip-loader-circle'))
   animEndEventNames =
     WebkitAnimation: 'webkitAnimationEnd'
