@@ -1,0 +1,22 @@
+{
+  "name": "iwanttoworkatunderbelly",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rileybracken/iwanttoworkatunderbelly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rileybracken/iwanttoworkatunderbelly/issues"
+  },
+  "homepage": "https://github.com/rileybracken/iwanttoworkatunderbelly",
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.1",
+    "gulp-sass": "^1.2.0",
+    "gulp-uglify": "^1.0.1"
+  }
+}
