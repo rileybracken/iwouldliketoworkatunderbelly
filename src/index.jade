@@ -5,12 +5,12 @@ head
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Riley Bracken Wants to Work for Underbelly
-    link(rel='stylesheet', type='text/css', href='vendor/normalize.css')
+    link(rel='stylesheet', type='text/css', href='vendor/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='css/styles.css')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,400', rel='stylesheet', type='text/css')
     script(src='vendor/modernizer.custom.js')
   body
-    #container.container
+    #container
       header.header
         h1.logo
           svg.ip-inner(width='100%', height='100%', viewbox='-289 381 33 32', preserveaspectratio='xMidYMin meet', aria-labelledby='logo_title')
@@ -19,22 +19,42 @@ head
           svg.ip-inner(width='60px', height='60px', viewbox='0 0 80 80')
             path.ip-loader-circlebg(d='M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z')
             path#ip-loader-circle.ip-loader-circle(d='M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z')
+
       .main
-        h2.text-center Riley Bracken
-        h3.text-thin.text-center.text-light Front End Developer
-        ul.contact
-          li 435 817 6404
-          li rileybracken@gmail.com
-          li @rileybracken
-        hr
-        p Paragraph about me
-        hr
-        h3 Experience
-        p Currently
-        p Currently
-        h3 Education
-        h3 Recognition
-        h3 Skills
-        h3 Hobbies & Interests
+        .container
+          .row
+            .col-md-12
+              h2.text-center Riley Bracken
+              h3.text-thin.text-center.text-light Front End Developer
+
+              ul.contact.list-inline.text-center.text-small
+                li 435 817 6404
+                li rileybracken@gmail.com
+                li @rileybracken
+
+        .container
+          .row
+            .col-md-10.col-md-offset-1
+              p I'm a 25 years old Art Director & Freelance Designer from Valladolid (Spain) currently based in Madrid. I love everything that has to do with Web design & development, Graphic design, Packaging, Industrial design and I feel a true devotion for typography.
+              p I have 4 years of experience working as a freelance and working on an studio, but and I’m ready for visiting other countries & work for any design studio! I love working with people, specially if they have the same passion I have for what they do.
+              p Why don't we work together? Go futher down to see why I am the man you need to hire!
+
+        .container.experience
+          .row
+            .col-md-7.col-md-offset-1
+              h3 Education
+
+        .container
+          .row
+            .col-md-7.col-md-offset-1
+              h3 Recognition
+            .col-md-3
+              h3 Skills
+
+        .container
+          .row
+            .col-md-12
+              h3 Hobbies & Interests
+
     script(src='vendor/classie.js')
     script(src='js/all.min.js')
