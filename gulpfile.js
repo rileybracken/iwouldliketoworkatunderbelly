@@ -36,6 +36,7 @@ gulp.task('watch', function () {
 	gulp.watch('src/js/**/*.coffee', ['scripts']);
 	gulp.watch('src/index.html', ['markup']);
 	gulp.watch('src/vendor/*', ['vendor']);
+	gulp.watch('src/css/*', ['styles']);
 });
 
 gulp.task('default', [
