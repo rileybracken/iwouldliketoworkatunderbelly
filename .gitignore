@@ -3,5 +3,5 @@ node_modules
 dist/*
 .log
 dist/css/styles.css
-
+bower_components
 dist/index.html
