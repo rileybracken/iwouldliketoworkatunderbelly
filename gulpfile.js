@@ -1,8 +1,9 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var coffee = require('gulp-coffee');
-var sass = require('gulp-sass')
+var gulp 			= require('gulp');
+var uglify 		= require('gulp-uglify');
+var concat 		= require('gulp-concat');
+var coffee 		= require('gulp-coffee');
+var sass 			= require('gulp-sass');
+var minifyCSS = require('gulp-minify-css');
 
 gulp.task('scripts', function () {
 	return  gulp.src('src/js/**/*')
@@ -20,6 +21,7 @@ gulp.task('markup', function () {
 gulp.task('styles', function() {
 	return gulp.src('src/css/*.scss')
 		.pipe(sass())
+		.pipe(minifyCSS())
 		.pipe(gulp.dest('dist/css'));
 });
 
