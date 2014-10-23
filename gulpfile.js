@@ -6,6 +6,7 @@ var sass = require('gulp-sass')
 
 gulp.task('scripts', function () {
 	return  gulp.src('src/js/**/*')
+		.pipe(coffee())
 		.pipe(concat('all.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
