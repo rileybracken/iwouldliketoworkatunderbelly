@@ -62,7 +62,7 @@ ul {
 }
 
 /* Main Column */
-.main { padding: 160px 15px; }
+.main { padding: 4rem 1em; }
 
 .about-section {
   margin: 4rem 0;
@@ -72,6 +72,14 @@ ul {
 
     &:last-child { margin-bottom: 0; }
   }
+}
+
+.gravatar {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 4rem;
+  height: 150px;
+  width: 150px;
 }
 
 /* Contact */
@@ -98,5 +106,18 @@ ul {
   h4 {
     font-family: 'Noto Serif', serif;
     margin-top: 1.5em;
+  }
+
+  .skills-circles {
+    float: right;
+
+    .ion.ion-record {
+      margin-right: 4px;
+      color: $light-grey;
+
+      &.occupado {
+        color: $dark-font;
+      }
+    }
   }
 }
