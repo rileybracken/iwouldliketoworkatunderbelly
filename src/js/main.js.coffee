@@ -54,7 +54,7 @@
             header.addEventListener animEndEventName, onEndHeaderAnimation
           else
             onEndHeaderAnimation()
-      , 60)
+      , 50)
 
     loader.setProgressFn simulationFn
 

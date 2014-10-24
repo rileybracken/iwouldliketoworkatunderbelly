@@ -1,3 +1,5 @@
+@import 'variables';
+
 .header {
 	position: fixed;
 	top: 0;
@@ -8,9 +10,19 @@
 	background: rgba(77, 168, 199, .99);
 
 	h1.logo {
-		margin: 0;
-		font-size: 4em;
-		color: #ffffff !important;
+		position: absolute;
+		top: -200px;
+
+		span {
+			position: relative;
+			font-size: 2em;
+			text-align: center;
+			display: block;
+			color: #fff;
+			margin-top: 1.5rem;
+			top: 1em;
+			font-family: 'Open Sans', sans-serif;
+		}
 	}
 
 	.logo,
